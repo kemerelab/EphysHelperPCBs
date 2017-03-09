@@ -793,8 +793,8 @@
 <part name="R1" library="Seeed-Resistor-2016" deviceset="SMD-RES-2K-5%-1/10W(0603)" device="" value="2K"/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="J1" library="Seeed-Connector -2016" deviceset="AUDIO-JACK-6P-SMD(ST-PJ-312)" device="" value="ST-PJ-312"/>
-<part name="PWR" library="Seeed-LED-2016" deviceset="LED-SMD-RED-DIFFUSED(0603)" device="" value="RED-0603"/>
-<part name="BEAM" library="Seeed-LED-2016" deviceset="SMD-LED-CLEAR-YELLOW(0603)" device="" value="YELLOW-0603"/>
+<part name="RED-0603" library="Seeed-LED-2016" deviceset="LED-SMD-RED-DIFFUSED(0603)" device="" value="PWR"/>
+<part name="YELLOW-0603" library="Seeed-LED-2016" deviceset="SMD-LED-CLEAR-YELLOW(0603)" device="" value="BEAM"/>
 <part name="GND6" library="SparkFun" deviceset="GND" device=""/>
 <part name="Q1" library="Seeed-Transistor-2016" deviceset="SMD-MOSFET-N-CH-50V-200MA-BSS138W-7-F(SOT-23)" device="" value="BSS138W-7-F"/>
 <part name="J2" library="Seeed-Connector -2016" deviceset="GROVE-CONNECTOR-SMD-90D(4+2P-2.0)" device="" value="4P-SMD-2.0-90D"/>
@@ -817,8 +817,8 @@
 <instance part="R1" gate="G$1" x="27.94" y="67.31" rot="R270"/>
 <instance part="P+1" gate="VCC" x="27.94" y="78.74"/>
 <instance part="J1" gate="G$1" x="68.58" y="54.61" rot="R90"/>
-<instance part="PWR" gate="G$1" x="27.94" y="57.15" rot="R270"/>
-<instance part="BEAM" gate="G$1" x="45.72" y="24.13" rot="R270"/>
+<instance part="RED-0603" gate="G$1" x="27.94" y="57.15" rot="R270"/>
+<instance part="YELLOW-0603" gate="G$1" x="45.72" y="24.13" rot="R270"/>
 <instance part="GND6" gate="1" x="81.28" y="73.66" rot="R90"/>
 <instance part="Q1" gate="G$1" x="45.72" y="12.7"/>
 <instance part="J2" gate="G$1" x="-15.24" y="36.83" rot="MR0"/>
@@ -846,7 +846,7 @@
 </segment>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
-<pinref part="PWR" gate="G$1" pin="-"/>
+<pinref part="RED-0603" gate="G$1" pin="-"/>
 <wire x1="27.94" y1="53.34" x2="27.94" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -922,7 +922,7 @@
 <segment>
 <wire x1="45.72" y1="27.94" x2="45.72" y2="29.21" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="BEAM" gate="G$1" pin="+"/>
+<pinref part="YELLOW-0603" gate="G$1" pin="+"/>
 </segment>
 </net>
 <net name="IRLED" class="0">
@@ -945,14 +945,14 @@
 <net name="N$3" class="0">
 <segment>
 <wire x1="45.72" y1="17.78" x2="45.72" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="BEAM" gate="G$1" pin="-"/>
+<pinref part="YELLOW-0603" gate="G$1" pin="-"/>
 <pinref part="Q1" gate="G$1" pin="D"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="PWR" gate="G$1" pin="+"/>
+<pinref part="RED-0603" gate="G$1" pin="+"/>
 <wire x1="27.94" y1="60.96" x2="27.94" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
