@@ -596,20 +596,20 @@ Includes Samtec/MillMax headers and sockets</description>
 </library>
 <library name="CactusPinInterfaces">
 <packages>
-<package name="TETRODE_1.5IN_RADIUS_0.3MM">
-<wire x1="1.660315625" y1="-0.580490625" x2="1.413309375" y2="-1.900165625" width="0.127" layer="21"/>
-<pad name="P$1" x="-1.245928125" y="-0.0407875" drill="0.3" diameter="0.7"/>
-<pad name="P$2" x="-0.415575" y="-0.004534375" drill="0.3" diameter="0.7"/>
-<pad name="P$3" x="0.415575" y="-0.004534375" drill="0.3" diameter="0.7"/>
-<pad name="P$4" x="1.245928125" y="-0.0407875" drill="0.3" diameter="0.7" rot="R15"/>
-<text x="0.3175" y="-1.905" size="0.635" layer="21" font="vector" ratio="16" rot="R90">&gt;NAME</text>
-</package>
 <package name="TETRODE_1.5IN_RADIUS_0.25MM">
 <wire x1="1.660315625" y1="-0.580490625" x2="1.413309375" y2="-1.900165625" width="0.127" layer="21"/>
 <pad name="P$1" x="-1.245928125" y="-0.0407875" drill="0.25" diameter="0.65"/>
 <pad name="P$2" x="-0.415575" y="-0.004534375" drill="0.25" diameter="0.65"/>
 <pad name="P$3" x="0.415575" y="-0.004534375" drill="0.25" diameter="0.65"/>
 <pad name="P$4" x="1.245928125" y="-0.0407875" drill="0.25" diameter="0.65"/>
+<text x="0.3175" y="-1.905" size="0.635" layer="21" font="vector" ratio="16" rot="R90">&gt;NAME</text>
+</package>
+<package name="TETRODE_1.5IN_RADIUS_0.3MM">
+<wire x1="1.660315625" y1="-0.580490625" x2="1.413309375" y2="-1.900165625" width="0.127" layer="21"/>
+<pad name="P$1" x="-1.245928125" y="-0.0407875" drill="0.3" diameter="0.7"/>
+<pad name="P$2" x="-0.415575" y="-0.004534375" drill="0.3" diameter="0.7"/>
+<pad name="P$3" x="0.415575" y="-0.004534375" drill="0.3" diameter="0.7"/>
+<pad name="P$4" x="1.245928125" y="-0.0407875" drill="0.3" diameter="0.7" rot="R15"/>
 <text x="0.3175" y="-1.905" size="0.635" layer="21" font="vector" ratio="16" rot="R90">&gt;NAME</text>
 </package>
 </packages>
@@ -676,38 +676,38 @@ Includes Samtec/MillMax headers and sockets</description>
 <part name="U$10" library="UsefulConnectors" deviceset="HIROSE-70PIN-HEADER" device="-SEQUENTIAL" value="HIROSE-70PIN-HEADER-SEQUENTIAL"/>
 <part name="U$11" library="UsefulConnectors" deviceset="HIROSE-70PIN-HEADER" device="-SEQUENTIAL" value="HIROSE-70PIN-HEADER-SEQUENTIAL"/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="0" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.3MM"/>
-<part name="1" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.3MM"/>
-<part name="2" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.3MM"/>
-<part name="3" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.3MM"/>
-<part name="4" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.3MM"/>
-<part name="5" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.3MM"/>
-<part name="6" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.3MM"/>
-<part name="7" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.3MM"/>
-<part name="8" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.3MM"/>
-<part name="9" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.3MM"/>
-<part name="10" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.3MM"/>
-<part name="11" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.3MM"/>
-<part name="12" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.3MM"/>
-<part name="13" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.3MM"/>
-<part name="14" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.3MM"/>
-<part name="15" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.3MM"/>
-<part name="16" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.3MM"/>
-<part name="17" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.3MM"/>
-<part name="18" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.3MM"/>
-<part name="19" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.3MM"/>
-<part name="20" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.3MM"/>
-<part name="21" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.3MM"/>
-<part name="22" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.3MM"/>
-<part name="23" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.3MM"/>
-<part name="24" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.3MM"/>
-<part name="25" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.3MM"/>
-<part name="26" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.3MM"/>
-<part name="27" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.3MM"/>
-<part name="28" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.3MM"/>
-<part name="29" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.3MM"/>
-<part name="30" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.3MM"/>
-<part name="31" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.3MM"/>
+<part name="0" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.25MM" value="TETRODE_1.5IN_RADIUS0.25MM"/>
+<part name="1" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.25MM" value="TETRODE_1.5IN_RADIUS0.25MM"/>
+<part name="2" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.25MM" value="TETRODE_1.5IN_RADIUS0.25MM"/>
+<part name="3" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.25MM" value="TETRODE_1.5IN_RADIUS0.25MM"/>
+<part name="4" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.25MM" value="TETRODE_1.5IN_RADIUS0.25MM"/>
+<part name="5" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.25MM" value="TETRODE_1.5IN_RADIUS0.25MM"/>
+<part name="6" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.25MM" value="TETRODE_1.5IN_RADIUS0.25MM"/>
+<part name="7" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.25MM" value="TETRODE_1.5IN_RADIUS0.25MM"/>
+<part name="8" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.25MM" value="TETRODE_1.5IN_RADIUS0.25MM"/>
+<part name="9" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.25MM" value="TETRODE_1.5IN_RADIUS0.25MM"/>
+<part name="10" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.25MM" value="TETRODE_1.5IN_RADIUS0.25MM"/>
+<part name="11" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.25MM" value="TETRODE_1.5IN_RADIUS0.25MM"/>
+<part name="12" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.25MM" value="TETRODE_1.5IN_RADIUS0.25MM"/>
+<part name="13" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.25MM" value="TETRODE_1.5IN_RADIUS0.25MM"/>
+<part name="14" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.25MM" value="TETRODE_1.5IN_RADIUS0.25MM"/>
+<part name="15" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.25MM" value="TETRODE_1.5IN_RADIUS0.25MM"/>
+<part name="16" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.25MM" value="TETRODE_1.5IN_RADIUS0.25MM"/>
+<part name="17" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.25MM" value="TETRODE_1.5IN_RADIUS0.25MM"/>
+<part name="18" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.25MM" value="TETRODE_1.5IN_RADIUS0.25MM"/>
+<part name="19" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.25MM" value="TETRODE_1.5IN_RADIUS0.25MM"/>
+<part name="20" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.25MM" value="TETRODE_1.5IN_RADIUS0.25MM"/>
+<part name="21" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.25MM" value="TETRODE_1.5IN_RADIUS0.25MM"/>
+<part name="22" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.25MM" value="TETRODE_1.5IN_RADIUS0.25MM"/>
+<part name="23" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.25MM" value="TETRODE_1.5IN_RADIUS0.25MM"/>
+<part name="24" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.25MM" value="TETRODE_1.5IN_RADIUS0.25MM"/>
+<part name="25" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.25MM" value="TETRODE_1.5IN_RADIUS0.25MM"/>
+<part name="26" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.25MM" value="TETRODE_1.5IN_RADIUS0.25MM"/>
+<part name="27" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.25MM" value="TETRODE_1.5IN_RADIUS0.25MM"/>
+<part name="28" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.25MM" value="TETRODE_1.5IN_RADIUS0.25MM"/>
+<part name="29" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.25MM" value="TETRODE_1.5IN_RADIUS0.25MM"/>
+<part name="30" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.25MM" value="TETRODE_1.5IN_RADIUS0.25MM"/>
+<part name="31" library="CactusPinInterfaces" deviceset="TETRODE_1.5IN_RADIUS" device="0.25MM" value="TETRODE_1.5IN_RADIUS0.25MM"/>
 </parts>
 <sheets>
 <sheet>
