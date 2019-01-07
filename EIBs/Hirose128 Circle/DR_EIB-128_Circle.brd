@@ -1663,25 +1663,25 @@ design rules under a new name.</description>
 <wire x1="24.257" y1="45.375" x2="24.257" y2="45.974" width="0.127" layer="1"/>
 <wire x1="24.257" y1="45.974" x2="26.955" y2="45.974" width="0.127" layer="16"/>
 <wire x1="26.955" y1="45.974" x2="26.955" y2="45.375" width="0.127" layer="1"/>
-<via x="24.257" y="45.974" extent="1-16" drill="0.3" shape="square"/>
-<via x="26.955" y="45.974" extent="1-16" drill="0.3" shape="square"/>
+<via x="24.257" y="45.974" extent="1-16" drill="0.3" shape="square" alwaysstop="yes"/>
+<via x="26.955" y="45.974" extent="1-16" drill="0.3" shape="square" alwaysstop="yes"/>
 <wire x1="26.955" y1="30.825" x2="26.924" y2="30.825" width="0.127" layer="1"/>
 <wire x1="26.924" y1="30.825" x2="26.924" y2="30.099" width="0.127" layer="1"/>
 <wire x1="26.924" y1="30.099" x2="24.245" y2="30.099" width="0.127" layer="16"/>
 <wire x1="24.245" y1="30.099" x2="24.245" y2="30.825" width="0.127" layer="1"/>
-<via x="26.924" y="30.099" extent="1-16" drill="0.3" shape="square"/>
-<via x="24.245" y="30.099" extent="1-16" drill="0.3" shape="square"/>
+<via x="26.924" y="30.099" extent="1-16" drill="0.3" shape="square" alwaysstop="yes"/>
+<via x="24.245" y="30.099" extent="1-16" drill="0.3" shape="square" alwaysstop="yes"/>
 <wire x1="49.276" y1="30.861" x2="49.276" y2="30.226" width="0.127" layer="1"/>
 <wire x1="49.276" y1="30.226" x2="51.955" y2="30.226" width="0.127" layer="16"/>
 <wire x1="51.955" y1="30.226" x2="51.955" y2="30.825" width="0.127" layer="1"/>
-<via x="49.276" y="30.226" extent="1-16" drill="0.3" shape="square"/>
-<via x="51.955" y="30.226" extent="1-16" drill="0.3" shape="square"/>
+<via x="49.276" y="30.226" extent="1-16" drill="0.3" shape="square" alwaysstop="yes"/>
+<via x="51.955" y="30.226" extent="1-16" drill="0.3" shape="square" alwaysstop="yes"/>
 <wire x1="51.955" y1="44.9" x2="51.943" y2="44.9" width="0.127" layer="1"/>
 <wire x1="51.943" y1="44.9" x2="51.943" y2="46.101" width="0.127" layer="1"/>
 <wire x1="51.943" y1="46.101" x2="49.245" y2="46.101" width="0.127" layer="16"/>
 <wire x1="49.245" y1="46.101" x2="49.245" y2="45.375" width="0.127" layer="1"/>
-<via x="51.943" y="46.101" extent="1-16" drill="0.3" shape="square"/>
-<via x="49.245" y="46.101" extent="1-16" drill="0.3" shape="square"/>
+<via x="51.943" y="46.101" extent="1-16" drill="0.3" shape="square" alwaysstop="yes"/>
+<via x="49.245" y="46.101" extent="1-16" drill="0.3" shape="square" alwaysstop="yes"/>
 <polygon width="0.127" layer="16">
 <vertex x="25.4" y="25.4" curve="100"/>
 <vertex x="50.8" y="25.4" curve="100"/>
