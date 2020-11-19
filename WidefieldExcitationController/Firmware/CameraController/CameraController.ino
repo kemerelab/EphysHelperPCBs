@@ -1,4 +1,3 @@
-#include "Firmware.h"
 
 #define LED_I1 2
 #define LED_I2 5
@@ -62,17 +61,28 @@ int camera_input = 0;
 int ActivityLEDs[] = {LED_ACT2, LED_ACT3, LED_ACT4};
 int TriggerPorts[] = {IO2, IO3, IO3};
 
-long int test_counter = 100000;
+// long int test_counter = 100000;
 
 void loop() {
      
   camera_input = GPIOC_PDIR & 0x02;
+
+  /* For testing -- */
+  /*
+  if (test_counter-- == 0) {
+    if (camera_input == 1)
+      camera_input = 0;
+    else
+      camera_input = 1;
+    test_counter = 100000;
+  }
+  */
   
   if ((state == 0) && (camera_input > 0)) { // rising edge
     digitalWrite(TriggerPorts[trigger_pin],1);
     digitalWrite(ActivityLEDs[trigger_pin],1);
 
-    //digitalWrite(LED_ACT1,1);
+    digitalWrite(LED_ACT1,1);
 
     state = 1;
     delay(2); // wait 2 ms before going on
@@ -81,7 +91,7 @@ void loop() {
     digitalWrite(TriggerPorts[trigger_pin],0);
     digitalWrite(ActivityLEDs[trigger_pin],0);
 
-    //digitalWrite(LED_ACT1,0);
+    digitalWrite(LED_ACT1,0);
     state = 0;
     trigger_pin++;
     if (trigger_pin > 2)
