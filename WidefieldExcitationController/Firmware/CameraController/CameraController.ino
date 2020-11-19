@@ -1,80 +1,91 @@
 #include "Firmware.h"
 
+#define LED_I1 2
+#define LED_I2 5
+#define LED_I3 8
+#define LED_I4 11
+
+#define LED_O1 1
+#define LED_O2 4
+#define LED_O3 7
+#define LED_O4 10
+
+#define LED_ACT1 0
+#define LED_ACT2 3
+#define LED_ACT3 6
+#define LED_ACT4 9
+
+// IO1 23 - Also this is PTC2
+// IO2 22 - Also this is PTC1
+// IO3 21 - Also this is PTD6
+// IO4 20 - Also this is PTD5
+#define IO1 23
+#define IO2 22
+#define IO3 21
+#define IO4 20
+
 void setup() {
 
-    InitGPIO();
-    ConfigDIO(1,INPUT_PULLDOWN);
-    ConfigDIO(2,OUTPUT);
-    ConfigDIO(3,OUTPUT);
-    ConfigDIO(4,OUTPUT);
-    ConfigAUX(2,OUTPUT);
-    ConfigAUX(3,OUTPUT);
-    ConfigAUX(4,OUTPUT);
+    pinMode(LED_I1, OUTPUT);
+    pinMode(LED_I2, OUTPUT);
+    pinMode(LED_I3, OUTPUT);
+    pinMode(LED_I4, OUTPUT);
+    pinMode(LED_O1, OUTPUT);
+    pinMode(LED_O2, OUTPUT);
+    pinMode(LED_O3, OUTPUT);
+    pinMode(LED_O4, OUTPUT);
+    pinMode(LED_ACT1, OUTPUT);
+    pinMode(LED_ACT2, OUTPUT);
+    pinMode(LED_ACT3, OUTPUT);
+    pinMode(LED_ACT4, OUTPUT);
 
-    digitalWrite(LED0, 0);
-    digitalWrite(LED1, 0);
-    digitalWrite(LED2, 0);
-    digitalWrite(LED3, 0);
+    digitalWrite(LED_I1, 1);
+    digitalWrite(LED_I2, 0);
+    digitalWrite(LED_I3, 0);
+    digitalWrite(LED_I4, 0);
+    
+    digitalWrite(LED_O1, 0);
+    digitalWrite(LED_O2, 1);
+    digitalWrite(LED_O3, 1);
+    digitalWrite(LED_O4, 1);
 
+    pinMode(IO1, INPUT);
+    pinMode(IO2, OUTPUT);
+    pinMode(IO3, OUTPUT);
+    pinMode(IO4, OUTPUT);
 }
 
-void sequenceLEDs(void) {
-    static int led = 0;
-    static int count = 500000;
-
-    if (count-- == 0) {
-        count = 500000;
-    }
-    else {
-        return;
-    }
-
-    switch (led) {
-       case 0:
-       digitalWrite(LED0, 1);
-       digitalWrite(LED2, 0);
-       led = 1;
-       break;
-       case 1:
-       digitalWrite(LED1, 1);
-       digitalWrite(LED0, 0);
-       led = 2;
-       break;
-       case 2:
-       digitalWrite(LED2, 1);
-       digitalWrite(LED1, 0);
-       led = 0;
-       break;
-       case 3:
-       digitalWrite(LED3, 1);
-       digitalWrite(LED2, 0);
-       led = 0;
-       break;
-    }
-}
-
-int trigger_pin = 2;
+int trigger_pin = 0;
 int state = 0;
 int camera_input = 0;
 
-void loop() {
+int ActivityLEDs[] = {LED_ACT2, LED_ACT3, LED_ACT4};
+int TriggerPorts[] = {IO2, IO3, IO3};
 
-  sequenceLEDs();
+long int test_counter = 100000;
+
+void loop() {
      
-  camera_input = GPIOD_PDIR & 0x01;
+  camera_input = GPIOC_PDIR & 0x02;
+  
   if ((state == 0) && (camera_input > 0)) { // rising edge
-    WriteDIO(trigger_pin,1);
-    WriteAUX(trigger_pin,1);
+    digitalWrite(TriggerPorts[trigger_pin],1);
+    digitalWrite(ActivityLEDs[trigger_pin],1);
+
+    //digitalWrite(LED_ACT1,1);
+
     state = 1;
     delay(2); // wait 2 ms before going on
   }
   else if ((state == 1) && (camera_input == 0)) { // falling edge
-    WriteDIO(trigger_pin, 0);
-    WriteAUX(trigger_pin, 0);
+    digitalWrite(TriggerPorts[trigger_pin],0);
+    digitalWrite(ActivityLEDs[trigger_pin],0);
+
+    //digitalWrite(LED_ACT1,0);
     state = 0;
     trigger_pin++;
-    if (trigger_pin > 4)
-      trigger_pin = 2;      
+    if (trigger_pin > 2)
+      trigger_pin = 0;      
   }
 
 }
